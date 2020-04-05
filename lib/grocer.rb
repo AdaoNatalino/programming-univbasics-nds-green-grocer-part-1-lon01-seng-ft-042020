@@ -24,10 +24,11 @@ def consolidate_cart(cart)
       else
         final_cart[i][:count] = final_cart[i][:count] + 1
         end
-        binding.pry
+        #binding.pry
       i+=1
     end
   end
+  return final_cart
 end
 
 
