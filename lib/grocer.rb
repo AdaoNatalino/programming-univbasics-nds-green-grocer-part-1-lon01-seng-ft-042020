@@ -20,8 +20,6 @@ def consolidate_cart(cart)
         binding.pry
         if final_cart_hash[:item] == found_item[:item]
           final_cart_hash[:count] +=1
-          else
-            final_cart_hash[:count] = 1
         end
       end
     else
