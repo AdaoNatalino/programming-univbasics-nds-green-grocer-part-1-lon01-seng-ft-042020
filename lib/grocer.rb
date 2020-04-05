@@ -14,7 +14,6 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   final_cart = []
   cart.each do |hash|
-    
     binding.pry 
   end
     
