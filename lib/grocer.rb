@@ -13,8 +13,9 @@ def consolidate_cart(cart)
  
   final_cart = []
   cart.each do |hash|
-    if cart[]
-    
+    i=0
+    while i < cart.length do
+      cart[i]
   end
     
 
