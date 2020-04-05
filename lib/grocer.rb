@@ -20,7 +20,7 @@ def consolidate_cart(cart)
         else
         final_cart[i] = cart[i] 
       end
-      binding.pry
+      #binding.pry
       y+=1
     end
 end
