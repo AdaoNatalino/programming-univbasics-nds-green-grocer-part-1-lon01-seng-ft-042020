@@ -12,6 +12,7 @@ end
 def consolidate_cart(cart)
   final_cart = []
   cart.each do |hash|
+    find_item_by_name_in_collection(hash[:item], )
       binding.pry
       i=0
       while i < cart.length do
