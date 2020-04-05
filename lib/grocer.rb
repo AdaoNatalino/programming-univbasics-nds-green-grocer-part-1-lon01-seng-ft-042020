@@ -15,7 +15,7 @@ def consolidate_cart(cart)
     i=0
     while i < cart.length do
       #binding.pry
-      if final_cart.includes? cart[i][:item]
+      if final_cart.include? cart[i][:item]
         final_cart[i][:count] +=1
         else
         final_cart[i] = cart[i] 
