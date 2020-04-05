@@ -20,8 +20,11 @@ def consolidate_cart(cart)
         if !hash[:item] = cart[i][:item]
             final_cart[i] = cart[i]
             final_cart[i][:count] = 1
-        binding.pry
+        #binding.pry
+      else
+        final_cart[i][:count] = final_cart[i][:count] + 1
         end
+        binding.pry
       i+=1
     end
   end
