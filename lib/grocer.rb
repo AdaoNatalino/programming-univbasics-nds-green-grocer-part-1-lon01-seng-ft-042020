@@ -12,7 +12,7 @@ end
 def consolidate_cart(cart)
  
   final_cart = []
-    cart.each do |hash|
+  cart.each do |hash|
       #binding.pry
       i=0
       while i < cart.length do
@@ -21,6 +21,7 @@ def consolidate_cart(cart)
         end
       i+=1
     end
+  end
 end
 
 
