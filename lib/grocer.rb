@@ -11,7 +11,7 @@ end
 
 def consolidate_cart(cart)
   final_cart = []
-  cart.each_with_index do |item_hash, i|
+  cart.each do |item_hash|
     found_item = find_item_by_name_in_collection(item_hash[:item], cart)
     if found_item
       final_cart.each do |final_cart_hash|
