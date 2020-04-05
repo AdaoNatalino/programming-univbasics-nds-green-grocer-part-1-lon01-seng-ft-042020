@@ -18,6 +18,7 @@ def consolidate_cart(cart)
     if final_cart.include?
       binding.pry 
     final_cart.push(hash)
+    end
     
   end
     
