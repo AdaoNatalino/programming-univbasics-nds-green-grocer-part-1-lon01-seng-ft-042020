@@ -14,7 +14,7 @@ def consolidate_cart(cart)
   final_cart = []
     i=0
     while i < cart.length do
-      if final_cart[i][:item] == cart[i][:item]
+      if final_cart.includes? cart[i][:item]
         final_cart[i][:count] +=1
         else
         final_cart[i] = cart[i] 
