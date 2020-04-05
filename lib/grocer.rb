@@ -24,6 +24,7 @@ def consolidate_cart(cart)
     else
       item_hash[:count] +=1
       final_cart.push(item_hash)
+      binding.pry
     end
   end
   return final_cart
