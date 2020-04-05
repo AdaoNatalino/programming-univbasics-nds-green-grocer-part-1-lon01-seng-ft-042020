@@ -15,7 +15,7 @@ def consolidate_cart(cart)
   final_cart = []
   cart.each do |hash|
     
-    if final_cart.include?
+    if final_cart[]include?
     final_cart.push(hash)
     
     binding.pry 
