@@ -10,16 +10,15 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
- 
   final_cart = []
   cart.each do |hash|
-      #binding.pry
+      binding.pry
       i=0
       while i < cart.length do
         #binding.pry
         if hash[:item] == cart[i][:item]
-          if final_cart[i]
-            final_cart[i][:count] = final_cart[i][:count] + 1
+          if final_cart
+            final_cart[i][:count] += 1
           else
           final_cart[i] = {}
           final_cart[i][:count] = 1
