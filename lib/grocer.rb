@@ -16,9 +16,11 @@ def consolidate_cart(cart)
       #binding.pry
       i=0
       while i < cart.length do
-        binding.pry
-        if hash[:item] = cart[i][:item]
         #binding.pry
+        if !hash[:item] = cart[i][:item]
+            final_cart[i] = cart[i]
+            final_cart[i][:count] = 1
+        binding.pry
         end
       i+=1
     end
