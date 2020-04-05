@@ -21,6 +21,8 @@ def consolidate_cart(cart)
             final_cart_item[:count] = 1
         end
       end
+    else
+      final_cart
     end
   end
   return final_cart
