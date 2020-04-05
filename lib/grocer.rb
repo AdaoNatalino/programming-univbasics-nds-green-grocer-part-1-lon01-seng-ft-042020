@@ -12,14 +12,14 @@ end
 def consolidate_cart(cart)
  
   final_cart = []
-    cart.each do |i|
-      binding.pry
-      if final_cart.include? cart[:item]
-        final_cart[i][:count] = final_cart[i][:count]+1
-        else
-        final_cart[i] = cart[i] 
-      end
+    cart.each do |hash|
       #binding.pry
+      i=0
+      while i < cart.length do
+        if hash[:item] = cart[:item]
+        binding.pry
+        end
+      i+=1
     end
 end
 
